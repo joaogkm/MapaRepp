@@ -15,10 +15,10 @@ df_BaseGeral = pd.read_csv('BaseLatLong_SP_2.csv',
                            sep=';', decimal=',', index_col=0)
 
 st.markdown('# Mapa de REPPresentantes 💊')
-btn = st.button('Acesse nosso site')  # use_container_width=True)
-if btn:
-    webbrowser.open_new_tab('www.Repp.com')
-
+btn = st.link_button(
+    'Acesse nosso site',
+    'www.Repp.com'
+)  # use_container_width=True)
 
 # Create an empty DataFrame to store filtered data
 df_Filtrado = pd.DataFrame()
